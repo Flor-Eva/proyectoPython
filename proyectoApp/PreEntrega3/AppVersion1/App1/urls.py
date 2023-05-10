@@ -8,9 +8,13 @@ urlpatterns=[
     path('Freelance', views.Freelance, name='Freelance'),
     path('Contratador', views.Contratador, name='Contratador'),
     path('Servicios', views.Servicios, name='Servicios'),
-    path('freelanceFormulario', views.freelanceFormulario, name="freelanceFormulario"),
-    path('contratadorFormulario', views.contratadorFormulario, name="contratadorFormulario"),
-    path('busquedaFreelance',views.busquedaFreelance,name="busquedaFreelance"),
+    path('contratadorFormulario', views.contratador_view, name='contratadorFormulario'),
+    path('freelanceFormulario', views.freelance_view, name="freelanceFormulario"),
+    path('busquedaFreelance', views.busquedaFreelance, name="busquedaFreelance"),
     path('buscar/',views.buscar),
+    path('leerFreelance',views.leerFreelance,name='leerFreelance'),
+    path('login',views.login_request, name="Login"),
+    path('register', views.register, name='register'),
+    
 ]
 
